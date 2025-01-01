@@ -1,4 +1,4 @@
-**Hospital Data Analysis Dashboard **
+**Hospital Data Analysis Dashboard**
 
 **Overview**
 
