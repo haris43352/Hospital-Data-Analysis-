@@ -29,18 +29,21 @@ Peak Hour Analysis: Determined patient inflow trends during peak hours to optimi
 
 Dr. ID 102 handled the highest number of high triage level patients, while Dr. ID 104 dealt with the majority of low triage cases.
 Action Point: Balance the distribution of high triage level patients to avoid overburdening specific doctors.
+
 2. **Treatment Type vs. Doctor**
 
 Dr. ID 104 performed the most surgeries (14), followed by Dr. IDs 103 and 105 (11 each).
 Dr. ID 102 provided the highest number of consultations and medications.
 Action Point: Investigate Dr. ID 104's ability to manage surgeries efficiently and replicate these methods across other doctors.
+
 3. **Doctor ID vs. Patient Outcomes**
 
 Dr. ID 101 had the lowest deceased rate (2), indicating better patient management.
 Dr. ID 102 had the highest deceased rate (13), despite being highly active in consultations and medications.
 Action Point: Analyze Dr. ID 102's treatment approach and patient demographics to identify improvement opportunities.
 
-4.** Doctor ID vs. Satisfaction Score**
+**4.** Doctor ID vs. Satisfaction Score****
+
 Dr. ID 105 had the highest average satisfaction score (5.0).
 Surprisingly, Dr. ID 101, with the lowest deceased rate, received a low satisfaction score (2.0), which may be linked to long waiting times for patients.
 Action Point: Address patient wait times for Dr. ID 101 and understand factors driving high satisfaction for Dr. ID 105.
@@ -51,15 +54,17 @@ Dr. ID 104 received the highest count of positive feedback ("good service"), cor
 Action Point: Use Dr. ID 104’s methods as a benchmark for other doctors.
 
 **6. Peak Hour Analysis**
+
 Patient counts peak during specific hours, creating high demand during those times.
 Action Point: Adjust staffing schedules and resources to handle peak-hour patient inflow effectively.
 
 **Additional Observations**
+
 The combination of low satisfaction scores for Dr. ID 101 and long wait times suggests a need to improve patient flow management.
 Dr. ID 102’s high activity in medications and consultations, combined with high deceased rates, requires an in-depth review of treatment protocols and patient handling practices.
 The high satisfaction scores for Dr. ID 105 could be due to effective communication and better time management during treatments.
-**
-Recommendations**
+
+**Recommendations**
 
 Optimize Workload Distribution: Ensure a more even distribution of high triage level patients and surgeries among doctors to improve efficiency and outcomes.
 Enhance Training: Focus on areas like time management and effective patient communication, particularly for Dr. ID 101.
