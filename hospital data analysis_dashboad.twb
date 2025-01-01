@@ -1,0 +1,1879 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_hospital_data.csv' inline='true' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_hospital_data.csv' name='textscan.0gwrl611uciwxp12qay6v0hqymvq'>
+            <connection class='textscan' directory='C:/Users/Abdullah/Desktop' filename='cleaned_hospital_data.csv.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='cleaned_hospital_new' name='textscan.0qofoxn1ffe9c41d4tqwt0um668b'>
+            <connection class='textscan' directory='C:/Users/Abdullah/Desktop' filename='cleaned_hospital_new.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qofoxn1ffe9c41d4tqwt0um668b' name='cleaned_hospital_new.csv' table='[cleaned_hospital_new#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='PatientID' ordinal='1' />
+            <column datatype='datetime' name='ArrivalTime' ordinal='2' />
+            <column datatype='string' name='TriageLevel' ordinal='3' />
+            <column datatype='datetime' name='TreatmentStart' ordinal='4' />
+            <column datatype='datetime' name='TreatmentEnd' ordinal='5' />
+            <column datatype='string' name='TreatmentType' ordinal='6' />
+            <column datatype='string' name='DoctorID' ordinal='7' />
+            <column datatype='string' name='Outcome' ordinal='8' />
+            <column datatype='real' name='SatisfactionScore' ordinal='9' />
+            <column datatype='string' name='Feedback' ordinal='10' />
+            <column datatype='string' name='RoomID' ordinal='11' />
+            <column datatype='real' name='Arival Hour' ordinal='12' />
+            <column datatype='real' name='Treatment_start_hour' ordinal='13' />
+            <column datatype='real' name='Treatment_end_hour' ordinal='14' />
+            <column datatype='real' name='Treatment_duration_hour' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PatientID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PatientID]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>PatientID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ArrivalTime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[ArrivalTime]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>ArrivalTime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TriageLevel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TriageLevel]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>TriageLevel</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TreatmentStart</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[TreatmentStart]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>TreatmentStart</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TreatmentEnd</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[TreatmentEnd]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>TreatmentEnd</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TreatmentType</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TreatmentType]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>TreatmentType</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DoctorID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DoctorID]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>DoctorID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Outcome]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>Outcome</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SatisfactionScore</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SatisfactionScore]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>SatisfactionScore</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Feedback</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Feedback]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>Feedback</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RoomID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RoomID]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>RoomID</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Arival Hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Arival Hour]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>Arival Hour</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Treatment_start_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Treatment_start_hour]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>Treatment_start_hour</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Treatment_end_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Treatment_end_hour]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>Treatment_end_hour</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Treatment_duration_hour</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Treatment_duration_hour]</local-name>
+            <parent-name>[cleaned_hospital_new.csv]</parent-name>
+            <remote-alias>Treatment_duration_hour</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='real' name='[Arival Hour]' role='dimension' type='ordinal' />
+      <column caption='Arrival Time' datatype='datetime' name='[ArrivalTime]' role='dimension' type='ordinal' />
+      <column caption='duration hour' datatype='real' name='[Calculation_900438481680994304]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if [Treatment_duration_hour]&gt;1&#13;&#10;THEN[Treatment_duration_hour]&#13;&#10;End' />
+      </column>
+      <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+      <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+      <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+      <column caption='Patient ID' datatype='string' name='[PatientID]' role='dimension' type='nominal' />
+      <column caption='Room ID' datatype='string' name='[RoomID]' role='dimension' type='nominal' />
+      <column caption='Satisfaction Score' datatype='real' name='[SatisfactionScore]' role='measure' type='quantitative' />
+      <column caption='Treatment End' datatype='datetime' name='[TreatmentEnd]' role='dimension' type='ordinal' />
+      <column caption='Treatment Start' datatype='datetime' name='[TreatmentStart]' role='dimension' type='ordinal' />
+      <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' name='[Treatment_duration_hour]' role='dimension' type='ordinal' />
+      <column caption='Treatment end hour' datatype='real' name='[Treatment_end_hour]' role='measure' type='quantitative' />
+      <column caption='Treatment start hour' datatype='real' name='[Treatment_start_hour]' role='measure' type='quantitative' />
+      <column caption='Triage Level' datatype='string' name='[TriageLevel]' role='dimension' type='nominal' />
+      <column caption='cleaned_hospital_new.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]' role='measure' type='quantitative' />
+      <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+      <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Abdullah/AppData/Local/Temp/TableauTemp/#TableauTemp_14ednry0oqal9y135vav1106bc6h.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/22/2024 07:41:22 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>155</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PatientID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PatientID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PatientID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>150</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ArrivalTime</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ArrivalTime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ArrivalTime</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TriageLevel</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TriageLevel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TriageLevel</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TreatmentStart</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[TreatmentStart]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TreatmentStart</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TreatmentEnd</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[TreatmentEnd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TreatmentEnd</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TreatmentType</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TreatmentType]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TreatmentType</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DoctorID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DoctorID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DoctorID</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Outcome</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SatisfactionScore</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[SatisfactionScore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SatisfactionScore</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Feedback</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Feedback]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Feedback</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RoomID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RoomID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RoomID</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Arival Hour</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Arival Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Arival Hour</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Treatment_start_hour</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Treatment_start_hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Treatment_start_hour</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Treatment_end_hour</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Treatment_end_hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Treatment_end_hour</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Treatment_duration_hour</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Treatment_duration_hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Treatment_duration_hour</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_hospital_new.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:TreatmentType:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Consultation&quot;</bucket>
+            </map>
+            <map to='#6fb899'>
+              <bucket>&quot;Medication&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Surgery&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Outcome:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Referred&quot;</bucket>
+            </map>
+            <map to='#55ad89'>
+              <bucket>&quot;Recovered&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Deceased&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Pakistan&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='PatientID' />
+        <field-sort-custom-order field='ArrivalTime' />
+        <field-sort-custom-order field='TriageLevel' />
+        <field-sort-custom-order field='TreatmentStart' />
+        <field-sort-custom-order field='TreatmentEnd' />
+        <field-sort-custom-order field='TreatmentType' />
+        <field-sort-custom-order field='DoctorID' />
+        <field-sort-custom-order field='Outcome' />
+        <field-sort-custom-order field='SatisfactionScore' />
+        <field-sort-custom-order field='Feedback' />
+        <field-sort-custom-order field='RoomID' />
+        <field-sort-custom-order field='Arival Hour' />
+        <field-sort-custom-order field='Treatment_start_hour' />
+        <field-sort-custom-order field='Treatment_end_hour' />
+        <field-sort-custom-order field='Calculation_142144891248173060' />
+        <field-sort-custom-order field='Treatment_duration_hour' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_hospital_new.csv' id='cleaned_hospital_new.csv_C6CC12720D284623A14670334567A044'>
+            <properties context=''>
+              <relation connection='textscan.0qofoxn1ffe9c41d4tqwt0um668b' name='cleaned_hospital_new.csv' table='[cleaned_hospital_new#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='PatientID' ordinal='1' />
+                  <column datatype='datetime' name='ArrivalTime' ordinal='2' />
+                  <column datatype='string' name='TriageLevel' ordinal='3' />
+                  <column datatype='datetime' name='TreatmentStart' ordinal='4' />
+                  <column datatype='datetime' name='TreatmentEnd' ordinal='5' />
+                  <column datatype='string' name='TreatmentType' ordinal='6' />
+                  <column datatype='string' name='DoctorID' ordinal='7' />
+                  <column datatype='string' name='Outcome' ordinal='8' />
+                  <column datatype='real' name='SatisfactionScore' ordinal='9' />
+                  <column datatype='string' name='Feedback' ordinal='10' />
+                  <column datatype='string' name='RoomID' ordinal='11' />
+                  <column datatype='real' name='Arival Hour' ordinal='12' />
+                  <column datatype='real' name='Treatment_start_hour' ordinal='13' />
+                  <column datatype='real' name='Treatment_end_hour' ordinal='14' />
+                  <column datatype='real' name='Treatment_duration_hour' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+      <datasources>
+        <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+        <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+        <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+        <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+        <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+        <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+        <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]'>
+        <groupfilter function='level-members' level='[none:DoctorID:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]'>
+        <groupfilter function='level-members' level='[none:Feedback:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]'>
+        <groupfilter function='level-members' level='[none:Outcome:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]'>
+        <groupfilter function='level-members' level='[none:TreatmentType:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Dr Id vs triage level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Dr Id Vs Triage Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column caption='Triage Level' datatype='string' name='[TriageLevel]' role='dimension' type='nominal' />
+            <column-instance column='[DoctorID]' derivation='Count' name='[cnt:DoctorID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TriageLevel]' derivation='None' name='[none:TriageLevel:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d6dee6</color>
+                <color>#beccdb</color>
+                <color>#a6bbd0</color>
+                <color>#90abc5</color>
+                <color>#7c9cbb</color>
+                <color>#698db0</color>
+                <color>#577fa5</color>
+                <color>#47719a</color>
+                <color>#39648f</color>
+                <color>#2c5985</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' />
+              <text column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TriageLevel:nk]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</cols>
+      </table>
+      <simple-id uuid='{443CBCAD-4EC0-429C-8515-633D4F169B48}' />
+    </worksheet>
+    <worksheet name='Dr id vs feedback'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Doctor Id Vs FeedBack</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column-instance column='[DoctorID]' derivation='Count' name='[cnt:DoctorID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' shelf='rows'>
+              <sort-filter-info>
+                <sort-filter level-name='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]' member-value='%null%' />
+              </sort-filter-info>
+            </shelf-sort-v2>
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' />
+              <text column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</cols>
+      </table>
+      <simple-id uuid='{44293DF1-1BE1-4F34-A5F7-6801E08E86E5}' />
+    </worksheet>
+    <worksheet name='Dr id vs satifaction score'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Doctor ID Vs Satisfaction Score</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Satisfaction Score' datatype='real' name='[SatisfactionScore]' role='measure' type='quantitative' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column-instance column='[SatisfactionScore]' derivation='Avg' name='[avg:SatisfactionScore:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[avg:SatisfactionScore:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[avg:SatisfactionScore:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[avg:SatisfactionScore:qk]</cols>
+      </table>
+      <simple-id uuid='{1765D955-D0B7-4767-B0D8-F2C04F194607}' />
+    </worksheet>
+    <worksheet name='Peak hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Count of patient peak hour </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column aggregation='Sum' datatype='real' name='[Arival Hour]' role='dimension' type='ordinal' />
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column-instance column='[Arival Hour]' derivation='Count' name='[cnt:Arival Hour:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Arival Hour]' derivation='None' name='[none:Arival Hour:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Arival Hour:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Arival Hour:ok]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:Arival Hour:qk]' scope='cols' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Arival Hour:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Arival Hour:ok]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Number of Patient:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:Arival Hour:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Arival Hour:ok]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:Arival Hour:qk]</cols>
+      </table>
+      <simple-id uuid='{52D4B102-B4D2-4077-9110-FE8CCA5C877C}' />
+    </worksheet>
+    <worksheet name='Treatment Duration Hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Treatment duration Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column caption='duration hour' datatype='real' name='[Calculation_900438481680994304]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if [Treatment_duration_hour]&gt;1&#13;&#10;THEN[Treatment_duration_hour]&#13;&#10;End' />
+            </column>
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column aggregation='Sum' datatype='real' name='[Treatment_duration_hour]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_900438481680994304]' derivation='Avg' name='[avg:Calculation_900438481680994304:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[avg:Calculation_900438481680994304:qk]</cols>
+      </table>
+      <simple-id uuid='{E831D6BD-0F41-4A7B-8708-A5F60C225E03}' />
+    </worksheet>
+    <worksheet name='Treatment with staff allocation'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Times New Roman'>Dr Id Vs Treatment Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column-instance column='[DoctorID]' derivation='Count' name='[cnt:DoctorID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+            <format attr='title' class='0' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Doctor ID:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Treatment Type:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count of Patient:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</cols>
+      </table>
+      <simple-id uuid='{3930C55C-6375-4439-877E-414986A27000}' />
+    </worksheet>
+    <worksheet name='dr Id vs outcome'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Doctor  ID Vs Outcome </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+            <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+            <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+            <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+            <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+            <column-instance column='[DoctorID]' derivation='Count' name='[cnt:DoctorID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]</column>
+            <column>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' scope='rows' value='' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='tick-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Doctor ID:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Outcome1:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count of patient:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]</rows>
+        <cols>[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]</cols>
+      </table>
+      <simple-id uuid='{36849951-BEEF-4BC0-8433-8F33BDA17EA8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1200' maxwidth='1220' minheight='1200' minwidth='1220' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='cleaned_hospital_data.csv' name='federated.1lm3wqo09ybdu0185ci8l1dosw5h' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1lm3wqo09ybdu0185ci8l1dosw5h'>
+        <column caption='Doctor ID' datatype='string' name='[DoctorID]' role='dimension' type='nominal' />
+        <column caption='Feedback1' datatype='string' name='[Feedback]' role='dimension' type='nominal' />
+        <column caption='Outcome1' datatype='string' name='[Outcome]' role='dimension' type='nominal' />
+        <column caption='Treatment Type' datatype='string' name='[TreatmentType]' role='dimension' type='nominal' />
+        <column-instance column='[DoctorID]' derivation='None' name='[none:DoctorID:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Feedback]' derivation='None' name='[none:Feedback:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Outcome]' derivation='None' name='[none:Outcome:nk]' pivot='key' type='nominal' />
+        <column-instance column='[TreatmentType]' derivation='None' name='[none:TreatmentType:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone forceUpdate='true' h='8000' id='3' type-v2='text' w='16393' x='0' y='0'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Hospital data </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Analysis</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#2c5985' />
+          </zone-style>
+        </zone>
+        <zone h='75167' id='4' param='vert' type-v2='layout-flow' w='16311' x='0' y='8167'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#2c5985' />
+          </zone-style>
+        </zone>
+        <zone h='16417' id='5' name='Dr Id vs triage level' w='39590' x='16557' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='16250' id='6' name='Treatment with staff allocation' w='43279' x='56475' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='8333' id='7' mode='radiolist' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]' type-v2='filter' w='15820' x='82' y='11500'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#2c5985' />
+          </zone-style>
+        </zone>
+        <zone h='8333' id='8' mode='radiolist' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]' type-v2='filter' w='15820' x='246' y='26250' />
+        <zone h='12667' id='9' mode='radiolist' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]' type-v2='filter' w='15984' x='82' y='50333' />
+        <zone h='9917' id='10' mode='radiolist' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]' type-v2='filter' w='15656' x='410' y='38417' />
+        <zone h='17417' id='11' name='Dr id vs satifaction score' w='39672' x='16557' y='17583' />
+        <zone h='17583' id='12' name='dr Id vs outcome' w='42459' x='58443' y='17750' />
+        <zone h='15583' id='13' name='Dr id vs feedback' w='40082' x='16557' y='35833' />
+        <zone h='15333' id='15' name='Peak hour' w='42377' x='57295' y='35833' />
+        <zone h='22250' id='16' name='Treatment Duration Hour' w='82377' x='16803' y='52500' />
+        <zone h='83417' id='17' type-v2='empty' w='246' x='16311' y='-333'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#013022' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1850' minheight='1850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='20' param='vert' type-v2='layout-flow' w='98688' x='656' y='667'>
+                <zone forceUpdate='true' h='8000' id='3' type-v2='text' w='16393' x='0' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Hospital data </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='20'>Analysis</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#2c5985' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='16417' id='5' is-fixed='true' name='Dr Id vs triage level' w='39590' x='16557' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone h='8333' id='7' mode='dropdown' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]' type-v2='filter' w='15820' x='82' y='11500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#2c5985' />
+                  </zone-style>
+                </zone>
+                <zone h='8333' id='8' mode='dropdown' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]' type-v2='filter' w='15820' x='246' y='26250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='12667' id='9' mode='dropdown' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]' type-v2='filter' w='15984' x='82' y='50333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9917' id='10' mode='dropdown' name='Treatment with staff allocation' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]' type-v2='filter' w='15656' x='410' y='38417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='195' h='16250' id='6' is-fixed='true' name='Treatment with staff allocation' w='43279' x='56475' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='209' h='17417' id='11' is-fixed='true' name='Dr id vs satifaction score' w='39672' x='16557' y='17583'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='211' h='17583' id='12' is-fixed='true' name='dr Id vs outcome' w='42459' x='58443' y='17750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='187' h='15583' id='13' is-fixed='true' name='Dr id vs feedback' w='40082' x='16557' y='35833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='15333' id='15' is-fixed='true' name='Peak hour' w='42377' x='57295' y='35833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='267' h='22250' id='16' is-fixed='true' name='Treatment Duration Hour' w='82377' x='16803' y='52500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AF024638-ECDF-42C5-B91A-720722393876}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Dr Id vs triage level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FC8B96A2-4D3E-4C66-8428-717339908863}' />
+    </window>
+    <window class='worksheet' name='Treatment with staff allocation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:TreatmentType:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:DoctorID:nk]' type='filter' />
+            <card mode='radiolist' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Feedback:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{843D2B61-4D8F-4E79-9618-5037C1838F4D}' />
+    </window>
+    <window class='worksheet' name='Dr id vs satifaction score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0FAF6968-A286-403E-952C-8AA195E3EF42}' />
+    </window>
+    <window class='worksheet' name='dr Id vs outcome'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[none:Outcome:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6FB7EF23-FA65-4DC6-B253-1D3589464D7E}' />
+    </window>
+    <window class='worksheet' name='Dr id vs feedback'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lm3wqo09ybdu0185ci8l1dosw5h].[cnt:DoctorID:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{902CAB3D-E49B-45AA-BD37-AC2445AB3634}' />
+    </window>
+    <window class='worksheet' name='Peak hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{499F9ED2-986B-47BF-BDDB-267834AA3914}' />
+    </window>
+    <window class='worksheet' name='Treatment Duration Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0438EDBD-3DBE-4077-89FD-7F5FE1E30707}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Dr Id vs triage level' />
+        <viewpoint name='Dr id vs feedback' />
+        <viewpoint name='Dr id vs satifaction score' />
+        <viewpoint name='Peak hour' />
+        <viewpoint name='Treatment Duration Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Treatment with staff allocation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='dr Id vs outcome'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5B889E49-952D-4B7D-B1EC-AA29D9F368A3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
