@@ -8,13 +8,13 @@ The process includes data cleaning, exploratory data analysis (EDA), and visuali
 
 **Steps Performed in Analysis**
 
-1. Exploratory Data Analysis (EDA)
+ Exploratory Data Analysis (EDA)
 Removed null values to ensure data quality and accuracy.
 Corrected data types where necessary (e.g., converting categorical fields to appropriate formats).
 Performed initial exploration to identify patterns in the data, such as relationships between treatment types and triage levels, or doctor performance and patient outcomes.
 Identified areas requiring further investigation, such as high deceased rates for specific doctors and low satisfaction scores.
 
-**3. Visualization**
+**Visualization**
 
 Created multiple visualizations to interpret and communicate the data effectively:
 Triage Levels by Doctor: Analyzed the distribution of triage levels managed by each doctor.
